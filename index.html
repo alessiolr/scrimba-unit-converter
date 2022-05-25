@@ -1,0 +1,24 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+        <title>Unit Converter Project</title>
+    </head>
+    <body>
+        <div id="hero">
+            <h3 id="hero-heading">Metric/Imperial Unit Conversion</h3>
+            <input id="num-el" type="number" placeholder="0" oninput="unitConverter(this.value)" onchange="unitConverter(this.value)">
+        </div>
+        <div id="calculations">
+            <h3 class="calc-heading">Length (Meters/Feet)</h3>
+            <p><span id="unit-meters">0</span> meters = <span id="feet-calc">0</span> feet | <span id="unit-feet">0</span> feet is <span id="meters-calc">0</span> meters</p>
+            <h3 class="calc-heading">Volume (Liters/Gallons)</h3>
+            <p><span id="unit-liters">0</span> liters = <span id="gallons-calc">0</span> gallons | <span id="unit-gallons">0</span> gallons is <span id="liters-calc">0</span> liters</p>
+            <h3 class="calc-heading">Mass (Kilograms/Pounds)</h3>
+            <p><span id="unit-kilos">0</span> kilos = <span id="pounds-calc">0</span> pounds | <span id="unit-pounds">0</span> pounds is <span id="kilos-calc">0</span> kilos</p>
+            </div>
+        <script src="index.js"></script>
+    </body>
+</html>
